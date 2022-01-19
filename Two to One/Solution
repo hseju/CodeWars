@@ -1,0 +1,23 @@
+public class TwoToOne {
+    
+    public static String longest (String s1, String s2) {
+        // your code
+      //define a string with actual alphabetical order
+      String trueOrder = "abcdefghijklmnopqrstuvwxyz";
+      //concate two input strings
+      String combined = s1+s2;
+      //store the result in new string
+      String result="";
+        //loop through each character in actual string and check if that character is in combined string
+        for(int i=0; i<trueOrder.length(); i++){
+            System.out.println(String.valueOf(trueOrder.charAt(i)));
+
+                if(combined.contains(String.valueOf(trueOrder.charAt(i)))){
+                    result += String.valueOf(trueOrder.charAt(i));
+                }
+        }
+      
+      return result;
+      
+    }
+}
